@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Teclado Virtual</title>
   </head>
   <body>
@@ -12,61 +23,74 @@
       <section>
         <h1>Teclado Virtual Celular</h1>
         <div class="container">
+          <div class="textarea">
+            <textarea name="text" cols="30" rows="10"></textarea>
+          </div>
           <div class="line-number">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>0</button>
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn">0</button>
           </div>
           <div class="line-first">
-            <button>Q</button>
-            <button>W</button>
-            <button>E</button>
-            <button>R</button>
-            <button>T</button>
-            <button>Y</button>
-            <button>U</button>
-            <button>I</button>
-            <button>O</button>
-            <button>P</button>
+            <button class="btn">q</button>
+            <button class="btn">w</button>
+            <button class="btn">e</button>
+            <button class="btn">r</button>
+            <button class="btn">t</button>
+            <button class="btn">y</button>
+            <button class="btn">u</button>
+            <button class="btn">i</button>
+            <button class="btn">o</button>
+            <button class="btn">p</button>
           </div>
           <div class="line-second">
-            <button>A</button>
-            <button>S</button>
-            <button>D</button>
-            <button>F</button>
-            <button>G</button>
-            <button>H</button>
-            <button>J</button>
-            <button>K</button>
-            <button>L</button>
+            <button class="btn">a</button>
+            <button class="btn">s</button>
+            <button class="btn">d</button>
+            <button class="btn">f</button>
+            <button class="btn">g</button>
+            <button class="btn">h</button>
+            <button class="btn">j</button>
+            <button class="btn">k</button>
+            <button class="btn">l</button>
           </div>
           <div class="line-third">
-            <button>A</button>
-            <button>Z</button>
-            <button>X</button>
-            <button>C</button>
-            <button>V</button>
-            <button>B</button>
-            <button>N</button>
-            <button>M</button>
+            <button class="capslock" style="width: 45px">
+              <i class="bx bx-up-arrow-alt"></i>
+            </button>
+            <button class="btn">z</button>
+            <button class="btn">x</button>
+            <button class="btn">c</button>
+            <button class="btn">v</button>
+            <button class="btn">b</button>
+            <button class="btn">n</button>
+            <button class="btn">m</button>
+            <button class="delete" style="width: 45px">
+              <i class="bx bxs-tag-x"></i>
+            </button>
           </div>
           <div class="line-fourth">
-            <button>?123</button>
-            <button>,</button>
-            <button>*/</button>
-            <button>.........</button>
-            <button>.</button>
-            <button>/</button>
+            <button style="width: 55px">!#1</button>
+            <button style="width: 35px" class="btn">,</button>
+            <button class="smile">
+              <i class="bx bx-smile"></i>
+            </button>
+            <button class="space">_________</button>
+            <button style="width: 35px" class="btn">.</button>
+            <button style="width: 55px">
+              <i class="bx bx-subdirectory-left"></i>
+            </button>
           </div>
         </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
