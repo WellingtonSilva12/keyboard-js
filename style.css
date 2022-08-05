@@ -56,7 +56,7 @@ h1 {
 .container .content {
   position: absolute;
   width: 80vw;
-  bottom: 250px;
+  bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,4 +111,29 @@ h1 {
 .line-third .second,
 .line-fourth .second {
   height: 52px;
+}
+
+@media (max-width: 768px) {
+  section h1 {
+    font-size: 28px;
+  }
+  .container .content {
+    position: static;
+    width: 100vw;
+    padding: 15px 0;
+  }
+  .container button {
+    font-size: 16px;
+  }
+  .container textarea {
+    height: 60px;
+  }
+  .line-number button,
+  .line-first button,
+  .line-second button,
+  .line-third button,
+  .line-fourth button {
+    width: 22px;
+    height: 40px;
+  }
 }
